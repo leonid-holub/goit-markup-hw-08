@@ -63,3 +63,22 @@
 .header__contact-icon {
 	fill: currentColor;
 }
+
+.mail-icon {
+	width: 14px;
+	height: 10px;
+
+	@include mq(desk) {
+		width: 16px;
+		height: 12px;
+	}
+}
+
+.tel-icon {
+	width: 10px;
+	height: 14px;
+
+	@include mq(desk) {
+		height: 16px;
+	}
+}

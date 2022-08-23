@@ -76,14 +76,31 @@
 	top: 0;
 	left: 0;
 	height: 100%;
-	padding: 64px 23px;
+	padding: 50px 24px;
+
+	@include mq(mob) {
+		padding: 77px 24px;
+	}
+
+	@include mq(tab) {
+		padding: 49px 24px 77px 24px;
+	}
+
+	@include mq(desk) {
+		padding: 64px 23px;
+	}
 
 	transform: translateY(100%);
 	transition: transform var(--anim);
 }
 
 .portfolio__desc {
+	font-weight: 400;
 	color: var(--white);
-	font-size: 18px;
+	font-size: 14px;
 	line-height: calc(28 / 18);
+
+	@include mq(mob) {
+		font-size: 18px;
+	}
 }

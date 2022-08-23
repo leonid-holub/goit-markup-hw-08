@@ -1,10 +1,13 @@
 .mobile-socials__list {
 	display: flex;
 	justify-content: start;
+	flex-wrap: wrap;
+	row-gap: 5px;
 }
 
 .mobile-socials__item {
 	padding-right: 10px;
+	flex-shrink: 1;
 }
 
 .mobile-socials__item:not(:first-child) {

@@ -10,7 +10,8 @@
 		url(../images/hero/hero-img@1x_sm.jpg);
 
 	@include mq(retina) {
-		background-image: url(../images/hero/hero-img@2x_sm.jpg);
+		background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+			url(../images/hero/hero-img@2x_sm.jpg);
 	}
 
 	// картинка для планшету
@@ -19,7 +20,8 @@
 			url(../images/hero/hero-img@1x_md.jpg);
 
 		@include mq(retina) {
-			background-image: url(../images/hero/hero-img@2x_md.jpg);
+			background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+				url(../images/hero/hero-img@2x_md.jpg);
 		}
 	}
 
@@ -29,7 +31,8 @@
 			url(../images/hero/hero-img@1x_lg.jpg);
 
 		@include mq(retina) {
-			background-image: url(../images/hero/hero-img@2x_lg.jpg);
+			background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+				url(../images/hero/hero-img@2x_lg.jpg);
 		}
 	}
 

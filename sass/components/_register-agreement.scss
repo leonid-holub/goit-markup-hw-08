@@ -9,10 +9,14 @@
 .agreement__txt {
 	font-weight: 400;
 	line-height: calc(14 / 12);
-	font-size: 12px;
+	font-size: 10px;
 
 	color: var(--modal-label-txt-color);
 	user-select: none;
+
+	@include mq(mob) {
+		font-size: 12px;
+	}
 
 	@include mq(desk) {
 		font-size: 14px;
