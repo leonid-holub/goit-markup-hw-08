@@ -892,6 +892,9 @@ img {
             flex-direction: row;
     -ms-flex-pack: distribute;
         justify-content: space-around;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1748,6 +1751,7 @@ img {
       -ms-flex-positive: 1;
           flex-grow: 1;
   border: 1px solid #eeeeee;
+  border-top: 0;
   padding-top: 20px;
   padding-bottom: 20px;
   padding-left: 24px;
@@ -1770,8 +1774,8 @@ img {
   left: 0;
   height: 100%;
   padding: 50px 24px;
-  -webkit-transform: translateY(100%);
-          transform: translateY(100%);
+  -webkit-transform: translateY(101%);
+          transform: translateY(101%);
   -webkit-transition: -webkit-transform var(--anim);
   transition: -webkit-transform var(--anim);
   transition: transform var(--anim);

@@ -55,6 +55,7 @@
 .portfolio__wrap {
 	flex-grow: 1;
 	border: 1px solid #eeeeee;
+	border-top: 0;
 	padding-top: 20px;
 	padding-bottom: 20px;
 	padding-left: 24px;
@@ -90,7 +91,7 @@
 		padding: 64px 23px;
 	}
 
-	transform: translateY(100%);
+	transform: translateY(101%);
 	transition: transform var(--anim);
 }
 

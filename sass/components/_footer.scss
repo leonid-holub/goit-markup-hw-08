@@ -26,6 +26,7 @@
 	@include mq(tab) {
 		flex-direction: row;
 		justify-content: space-around;
+		align-items: baseline;
 	}
 
 	@include mq(desk) {
