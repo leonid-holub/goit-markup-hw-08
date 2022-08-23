@@ -1,0 +1,78 @@
+.register-wrap {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	gap: 4px;
+}
+
+.modal-form__title {
+	display: block;
+	margin-bottom: 12px;
+	font-size: 20px;
+	line-height: calc(30 / 20);
+	text-align: center;
+	letter-spacing: 0.03em;
+	color: #212121;
+
+	@include mq(desk) {
+		line-height: calc(23 / 20);
+	}
+}
+
+.modal-form__txt {
+	font-weight: 400;
+	font-size: 12px;
+	line-height: calc(14 / 12);
+	letter-spacing: 0.01em;
+	color: var(--modal-label-txt-color);
+}
+
+.momodal-form__icon {
+	position: absolute;
+	top: 29px;
+	left: 12px;
+	fill: var(--modal-fiel-icon-clr);
+	transition: fill var(--anim);
+}
+
+.modal-form__input:focus + .momodal-form__icon {
+	fill: var(--accent-color);
+}
+
+.modal-form__input {
+	height: 40px;
+	outline: transparent;
+	border: 1px solid var(--modal-input-field-border-clr);
+	border-radius: 4px;
+	margin-bottom: 10px;
+	padding: 12px 42px;
+
+	transition: border-color var(--anim);
+}
+
+.modal-form__input:focus {
+	border-color: var(--accent-color);
+}
+
+.register-message {
+	resize: none;
+	outline: transparent;
+	border: 1px solid var(--modal-input-field-border-clr);
+	border-radius: 4px;
+	margin-bottom: 20px;
+	padding: 12px 16px;
+
+	transition: border-color var(--anim);
+
+	&:focus {
+		border-color: var(--accent-color);
+	}
+
+	&::placeholder {
+		font-weight: 400;
+		font-size: 12px;
+		line-height: calc(14 / 12);
+		letter-spacing: 0.01em var(--accent-color);
+		color: var(--modal-register-message-placeholder-clr);
+	}
+}

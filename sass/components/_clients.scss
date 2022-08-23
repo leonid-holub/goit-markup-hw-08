@@ -1,0 +1,56 @@
+/* Наші клієнти */
+.clients {
+	@include section;
+}
+
+.clients__item {
+	display: flex;
+	justify-content: center;
+}
+
+.clients__list {
+	--items: 1;
+
+	@include mq(mob) {
+		--items: 2;
+	}
+
+	@include mq(tab) {
+		--items: 3;
+	}
+
+	@include mq(desk) {
+		--items: 6;
+	}
+}
+
+.clients__link {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: 1px solid currentColor;
+	border-radius: 4px;
+	width: 210px;
+	height: 92px;
+	color: var(--socials-icon-color);
+
+	@include mq(tab) {
+		width: 226px;
+	}
+
+	@include mq(desk) {
+		width: 170px;
+	}
+
+	transition: color var(--anim);
+
+	&:hover,
+	:focus {
+		color: var(--accent-color);
+	}
+}
+
+.clients__icon {
+	max-width: 100%;
+	fill: currentColor;
+}

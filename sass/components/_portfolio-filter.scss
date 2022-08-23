@@ -1,0 +1,24 @@
+/* Фільтр */
+.filter-list {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: start;
+	gap: 8px;
+
+	max-width: 327px;
+
+	margin-bottom: 40px;
+
+	@include mq(tab) {
+		margin-bottom: 30px;
+		max-width: 100%;
+		justify-content: center;
+	}
+
+	@include mq(desk) {
+		margin-bottom: 50px;
+		max-width: 100%;
+		justify-content: center;
+	}
+}

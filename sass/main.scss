@@ -1,0 +1,37 @@
+// Utils styles
+@import "./utils/variables";
+@import "./utils/visually-hidden";
+@import "./utils/mixins";
+
+// Components styles
+@import "./components/reset";
+@import "./components/common";
+@import "./components/container";
+@import "./components/header";
+@import "./components/logo";
+@import "./components/hero";
+@import "./components/button";
+@import "./components/nav";
+@import "./components/features";
+@import "./components/services";
+@import "./components/team";
+@import "./components/socials";
+@import "./components/clients";
+@import "./components/footer";
+@import "./components/subscribe-form";
+
+// Modal
+@import "./components/backdrop";
+@import "./components/modal-window";
+@import "./components/register-form";
+@import "./components/register-agreement";
+@import "./components/modal-send-btn";
+@import "./components/mobile";
+@import "./components/mobile-menu";
+@import "./components/mobile-contacts";
+@import "./components/mobile-socials";
+
+// Portfolio page
+@import "./components/portfolio-header";
+@import "./components/portfolio-filter";
+@import "./components/portfolio-portfolio";

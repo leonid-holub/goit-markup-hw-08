@@ -1,0 +1,65 @@
+.header__container {
+	align-items: center;
+
+	padding-top: 10px;
+	padding-bottom: 10px;
+
+	@include mq(tab) {
+		display: flex;
+		padding-top: 21px;
+		padding-bottom: 21px;
+	}
+
+	@include mq(desk) {
+		display: flex;
+		padding-top: 24px;
+		padding-bottom: 25px;
+	}
+}
+
+/* Контакти в шапці */
+
+.header__contact-list {
+	display: none;
+
+	@include mq(tab) {
+		display: flex;
+		flex-direction: column;
+		gap: 10px;
+		margin-left: auto;
+	}
+
+	@include mq(desk) {
+		flex-direction: row;
+		gap: 30px;
+		margin-left: auto;
+	}
+}
+
+.header__contact-link {
+	display: flex;
+	flex-direction: row;
+	gap: 10px;
+	align-items: center;
+	color: var(--secondary-text-color);
+	text-decoration: none;
+	font-weight: 500;
+	font-size: 12px;
+	line-height: calc(14 / 12);
+	letter-spacing: 0.02em;
+	transition: color var(--anim);
+
+	&:hover,
+	:focus {
+		color: var(--accent-color);
+	}
+
+	@include mq(desk) {
+		font-size: 14px;
+		line-height: calc(16 / 14);
+	}
+}
+
+.header__contact-icon {
+	fill: currentColor;
+}

@@ -1,0 +1,36 @@
+:root {
+	/* Кольори тексту */
+	--primary-text-color: #212121;
+	--secondary-text-color: #757575;
+	--accent-color: #2196f3;
+	--white: #ffffff;
+	--footer-contact-text: rgba(255, 255, 255, 0.6);
+	--main-logo-color: #000000;
+	--modal-label-txt-color: #757575;
+	--modal-register-message-placeholder-clr: rgba(117, 117, 117, 0.5);
+
+	/* Кольори фону */
+	--primary-background-color: #ffffff;
+	--secondary-backgroud-color: #f5f4fa;
+	--footer-background-color: #2f303a;
+	--hero-background-color: #c4c4c4;
+	--services-wrap-bkg-color: rgba(47, 48, 58, 0.8);
+	--portfolio-overlay-bkg: rgba(33, 150, 243, 0.9);
+	--backdrop-bkg-color: rgba(0, 0, 0, 0.2);
+
+	/* Колір кнопки */
+	--secondary-button-background-color: #f5f4fa;
+	--socials-icon-color: #afb1b8;
+	--footer-soc-icon-color: rgba(255, 255, 255, 0.1);
+	--footer-input-email-border: rgba(255, 255, 255, 0.3);
+
+	/* Інше */
+	--portfolio-header-botoom-line: #ececec;
+	--anim: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+	--modal-input-field-border-clr: rgba(33, 33, 33, 0.2);
+	--modal-fiel-icon-clr: #212121;
+
+	/* Сітка */
+	--indent: 30px;
+	--items: 3;
+}

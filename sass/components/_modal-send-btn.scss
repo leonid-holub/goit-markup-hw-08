@@ -1,0 +1,31 @@
+.modal-form__button {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-left: auto;
+	margin-right: auto;
+	min-width: 200px;
+	height: 50px;
+	padding: 10px 52px;
+
+	font-family: inherit;
+	color: var(--white);
+	background-color: var(--accent-color);
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 1.88;
+	letter-spacing: 0.06em;
+
+	border: 1px solid var(--accent-color);
+	border-radius: 4px;
+	cursor: pointer;
+
+	transition: color var(--anim), background-color var(--anim), box-shadow var(--anim);
+
+	&:hover,
+	:focus {
+		color: var(--primary-text-color);
+		background-color: var(--secondary-button-background-color);
+		box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+	}
+}
